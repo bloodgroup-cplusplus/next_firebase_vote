@@ -1,4 +1,3 @@
-import projectAuth from "../config"
 import { createUserWithEmailAndPassword,projectAuth } from "../config"
 
 export default async function signUp(email,password)
