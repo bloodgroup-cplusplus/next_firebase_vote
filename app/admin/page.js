@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { useAuthContext } from "@/context/AuthContext";
+import { useAuthContext } from "../(context)/AuthContext";
 import { useRouter } from "next/navigation";
 import addData from "../(firebase)/addData";
 function Page() {
@@ -27,7 +27,6 @@ function Page() {
 
     return (<h1>
         Only logged in users can view this page
-        {handleForm}
 
     </h1>);
 }
