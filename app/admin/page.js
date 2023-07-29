@@ -14,7 +14,8 @@ function Page() {
     const [dob,setDateOfBirth] = useState("")
     const [district,setDistrict] = useState("")
     const[voter_id,setVoterId] =useState("")
-    const handleForm = async()=>{
+    const handleForm = async(e)=>{
+        e.preventDefault()
         const data = {
             district,
             voter_id,
