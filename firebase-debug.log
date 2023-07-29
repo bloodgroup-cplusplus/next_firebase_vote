@@ -1,0 +1,68 @@
+[debug] [2023-07-29T16:22:37.094Z] ----------------------------------------------------------------------
+[debug] [2023-07-29T16:22:37.095Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-07-29T16:22:37.095Z] CLI Version:   11.23.1
+[debug] [2023-07-29T16:22:37.095Z] Platform:      darwin
+[debug] [2023-07-29T16:22:37.095Z] Node Version:  v18.12.1
+[debug] [2023-07-29T16:22:37.096Z] Time:          Sat Jul 29 2023 21:52:37 GMT+0530 (India Standard Time)
+[debug] [2023-07-29T16:22:37.096Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-29T16:22:37.127Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-29T16:22:37.127Z] > authorizing via signed-in user (clrsclrsclrsclrsclrs@gmail.com)
+[debug] [2023-07-29T16:22:37.127Z] [iam] checking project otpproject-7714c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-29T16:22:37.128Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/otpproject-7714c:testIamPermissions [none]
+[debug] [2023-07-29T16:22:37.128Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/otpproject-7714c:testIamPermissions x-goog-quota-user=projects/otpproject-7714c
+[debug] [2023-07-29T16:22:37.128Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/otpproject-7714c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-29T16:22:40.100Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/otpproject-7714c:testIamPermissions 200
+[debug] [2023-07-29T16:22:40.100Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/otpproject-7714c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-29T16:22:40.102Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c [none]
+[debug] [2023-07-29T16:22:42.144Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c 200
+[debug] [2023-07-29T16:22:42.145Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c {"projectId":"otpproject-7714c","projectNumber":"636748451600","displayName":"otpproject","name":"projects/otpproject-7714c","resources":{"hostingSite":"otpproject-7714c","storageBucket":"otpproject-7714c.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_47886137-d6e2-42b4-93a2-d70cd68eeb77"}
+[debug] [2023-07-29T16:22:43.124Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites pageToken=&pageSize=10
+[debug] [2023-07-29T16:22:46.541Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites 200
+[debug] [2023-07-29T16:22:46.541Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites {"sites":[{"name":"projects/otpproject-7714c/sites/otpproject-7714c","defaultUrl":"https://otpproject-7714c.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-29T16:22:46.543Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites 
+[debug] [2023-07-29T16:22:49.341Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites 200
+[debug] [2023-07-29T16:22:49.341Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites {"sites":[{"name":"projects/otpproject-7714c/sites/otpproject-7714c","defaultUrl":"https://otpproject-7714c.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-29T16:22:49.342Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c/webApps/-/config [none]
+[debug] [2023-07-29T16:22:53.338Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c/webApps/-/config 200
+[debug] [2023-07-29T16:22:53.338Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c/webApps/-/config {"projectId":"otpproject-7714c","appId":"1:636748451600:web:b15c864655d8c1646d1f95","storageBucket":"otpproject-7714c.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyD6vMxRpK_HKU-WWN2gC5rXrWlrVyb-dO4","authDomain":"otpproject-7714c.firebaseapp.com","messagingSenderId":"636748451600"}
+[debug] [2023-07-29T16:23:22.801Z] TypeError: Cannot read properties of null (reading 'endsWith')
+    at ɵcodegenPublicDirectory (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:206:56)
+    at async prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:256:13)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-29T16:23:41.923Z] ----------------------------------------------------------------------
+[debug] [2023-07-29T16:23:41.924Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-07-29T16:23:41.924Z] CLI Version:   11.23.1
+[debug] [2023-07-29T16:23:41.924Z] Platform:      darwin
+[debug] [2023-07-29T16:23:41.924Z] Node Version:  v18.12.1
+[debug] [2023-07-29T16:23:41.925Z] Time:          Sat Jul 29 2023 21:53:41 GMT+0530 (India Standard Time)
+[debug] [2023-07-29T16:23:41.925Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-29T16:23:41.955Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-29T16:23:41.955Z] > authorizing via signed-in user (clrsclrsclrsclrsclrs@gmail.com)
+[debug] [2023-07-29T16:23:41.955Z] [iam] checking project otpproject-7714c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-29T16:23:41.956Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/otpproject-7714c:testIamPermissions [none]
+[debug] [2023-07-29T16:23:41.956Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/otpproject-7714c:testIamPermissions x-goog-quota-user=projects/otpproject-7714c
+[debug] [2023-07-29T16:23:41.956Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/otpproject-7714c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-29T16:23:43.952Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/otpproject-7714c:testIamPermissions 200
+[debug] [2023-07-29T16:23:43.952Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/otpproject-7714c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-29T16:23:43.953Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c [none]
+[debug] [2023-07-29T16:23:46.452Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c 200
+[debug] [2023-07-29T16:23:46.452Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c {"projectId":"otpproject-7714c","projectNumber":"636748451600","displayName":"otpproject","name":"projects/otpproject-7714c","resources":{"hostingSite":"otpproject-7714c","storageBucket":"otpproject-7714c.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_47886137-d6e2-42b4-93a2-d70cd68eeb77"}
+[debug] [2023-07-29T16:23:47.424Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites pageToken=&pageSize=10
+[debug] [2023-07-29T16:23:53.777Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites 200
+[debug] [2023-07-29T16:23:53.777Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites {"sites":[{"name":"projects/otpproject-7714c/sites/otpproject-7714c","defaultUrl":"https://otpproject-7714c.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-29T16:23:53.778Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites 
+[debug] [2023-07-29T16:23:56.583Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites 200
+[debug] [2023-07-29T16:23:56.584Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/otpproject-7714c/sites {"sites":[{"name":"projects/otpproject-7714c/sites/otpproject-7714c","defaultUrl":"https://otpproject-7714c.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-29T16:23:56.584Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c/webApps/-/config [none]
+[debug] [2023-07-29T16:23:59.899Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c/webApps/-/config 200
+[debug] [2023-07-29T16:23:59.899Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/otpproject-7714c/webApps/-/config {"projectId":"otpproject-7714c","appId":"1:636748451600:web:b15c864655d8c1646d1f95","storageBucket":"otpproject-7714c.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyD6vMxRpK_HKU-WWN2gC5rXrWlrVyb-dO4","authDomain":"otpproject-7714c.firebaseapp.com","messagingSenderId":"636748451600"}
+[debug] [2023-07-29T16:24:13.199Z] TypeError: Cannot read properties of null (reading 'endsWith')
+    at ɵcodegenPublicDirectory (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:206:56)
+    at async prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:256:13)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
