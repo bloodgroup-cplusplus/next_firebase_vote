@@ -50,7 +50,7 @@ function Page() {
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                   Cast Your Vote Here
               </h1>
-              <form className="space-y-4 md:space-y-6" onSubmit={handleForm} method="post">
+              <form className="space-y-4 md:space-y-6" onSubmit={handleForm}>
                 <div>
 
                 </div>
