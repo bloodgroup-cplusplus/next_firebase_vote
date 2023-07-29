@@ -4,6 +4,7 @@ export default async function addData(collection,id,data)
 {
     let result = null; 
     let error = null;
+    console.log(data)
     try {
         result = await setDoc(doc(projectFirestore,collection,id),data,{
             merge:true
